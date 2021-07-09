@@ -1,0 +1,178 @@
+header {
+  background-color: $dark;
+  color: $light;
+  border-bottom: 1px solid $grey !important;
+  margin-bottom: 40px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 15px 10px;
+
+    &--logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .logo-photo {
+        margin-right: 10px;
+      }
+
+      .logo {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: $light;
+      }
+    }
+
+    &--menu {
+      @media only screen and (max-width: 912px) {
+        display: none;
+      }
+      ul {
+        display: flex;
+
+        li {
+          margin-left: 35px;
+
+          a {
+            color: $secondary;
+            @include centerFlex;
+            transition: color 250ms;
+
+            i {
+              margin-right: 10px;
+              font-size: 1.7rem;
+            }
+            span {
+              font-size: 1rem;
+              font-weight: 400;
+            }
+
+            &:hover {
+              color: $light;
+            }
+          }
+        }
+      }
+    }
+
+    &--user-action {
+      @include centerFlex;
+
+      .user-point {
+        @media only screen and (max-width: 447px) {
+          display: none;
+        }
+
+        @include centerFlex;
+        padding: 5px 30px 5px 5px;
+        background-color: $grey;
+        color: $light;
+        border-radius: 15px;
+        margin-right: 10px;
+
+        .icon {
+          @include centerFlex;
+          width: 30px;
+          height: 30px;
+          border-radius: 10px;
+          background-color: #4447e2;
+          margin-right: 19px;
+          color: white;
+        }
+
+        .point {
+          @include centerFlex;
+
+          i {
+            font-size: 1rem;
+            margin-right: 10px;
+          }
+
+          .p {
+            font-size: 1rem;
+            color: $light;
+            font-weight: 400;
+          }
+        }
+      }
+
+      .user-dropdown {
+        position: relative;
+        display: inline-block;
+
+        button {
+          background-color: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 4px;
+          font-size: 16px;
+          cursor: pointer;
+
+          &:focus + nav {
+            opacity: 1;
+            visibility: visible;
+          }
+
+          i {
+            color: slateblue;
+          }
+
+          img {
+            width: 40px;
+            max-width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            object-fit: cover;
+          }
+        }
+
+        nav {
+          position: absolute;
+          top: 100%;
+          right: 0;
+          background-color: $dark;
+          color: $light;
+          border: 2px solid $grey;
+          width: 254px;
+          border-radius: 15px;
+          opacity: 0;
+          visibility: hidden;
+          margin-top: 11px;
+          transition: 200ms all;
+          z-index: 1;
+
+          ul {
+            li {
+              .logout {
+                color: $danger;
+              }
+
+              a {
+                display: flex;
+                align-items: center;
+                padding: 20px 20px;
+                color: $light;
+                font-size: 1rem;
+                font-weight: 400;
+
+                i {
+                  margin-right: 10px;
+                }
+
+                &:hover {
+                  background-color: $grey;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

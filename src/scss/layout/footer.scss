@@ -1,0 +1,102 @@
+footer {
+    background-color: $dark;
+    color: $light;
+    border-top: 1px solid $secondary !important;
+    margin-top: 40px;
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: $container-width;
+        margin: 0 auto;
+        padding: 15px 10px;
+
+        &--social {
+            display: flex;
+
+            @media only screen and (max-width: 912px) {
+                display: none;
+            }
+
+            a {
+                margin-right: 20px;
+                font-size: 1.7rem;
+                color: $secondary;
+                transition: 100ms all;
+                
+                &:hover {
+                    color: $light;
+                }
+            }
+        }
+
+        &--copyright {
+
+            @media only screen and (max-width: 912px) {
+                display: none;
+            }
+
+            p {
+                color: $light;
+                font-size: 1.1rem;
+                font-weight: 400;
+            }
+        }
+
+        &--police {
+
+            @media only screen and (max-width: 912px) {
+                display: none;
+            }
+
+            p {
+                color: $light;
+                font-size: 1.1rem;
+                font-weight: 400;
+            }
+        }
+
+    }
+
+    .footer--menu {
+        display: none;
+        
+        @media only screen and (max-width: 912px) {
+            @include centerFlex;
+            max-width: $container-width;
+            margin: 0 auto;
+
+        ul {
+          display: flex;
+    
+          li {
+            margin-left: 35px;
+    
+            a {
+                @include centerFlex;
+                flex-direction: column;
+                color: $secondary;
+                transition: color 250ms;
+    
+                i {
+                  font-size: 1.4rem;
+                  margin-bottom: 5px;
+                }
+                span {
+                  font-size: 0.7rem;
+                  font-weight: 400;
+                }
+    
+                &:hover {
+                  color: $light;
+                }
+              }
+              
+          }
+        }
+        }
+
+    }
+
+}

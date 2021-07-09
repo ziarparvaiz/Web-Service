@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+}
+
+ul,
+li,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+form,
+input,
+select,
+textarea,
+section,
+article,
+span,
+p {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+}
+
+:focus,
+:visited,
+:active {
+  outline: 0;
+  border: 0;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 15px;
+}

@@ -1,0 +1,33 @@
+.btn-create-task {
+    padding: 15px 18px;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: $grey;
+    color: $light;
+    border-radius: 15px;
+    transition: background-color 250ms;
+
+    i {
+        margin-right: 10px;
+    }
+
+    &:hover {
+        background-color: #4e4e58;
+    }
+}
+
+.btn-task-view {
+    @include centerFlex;
+    flex-basis: 100%;
+    padding: 10px 0;
+    color: $light;
+    border: 2px solid $primary !important;
+    border-radius: 15px;
+    transition: 300ms all;
+
+    &:hover {
+        background-color: $primary;
+        color: $light;
+        border: 0;
+    }
+}
