@@ -1,0 +1,10 @@
+body {
+  background-color: $bg-color;
+  color: $light;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 15px;
+}

@@ -3,17 +3,16 @@
 @import "base/mixin";
 @import "base/normalize";
 @import "base/reset";
+@import "base/globale";
 
 //  Typography Folder Files
 @import "typography/fonts";
 
 // Components Folder Files
+@import "components/header";
+@import "components/footer";
 @import "components/button";
 @import "components/task-card";
 
 // Layout Folder Files
-@import "layout/header";
-@import "layout/body";
-@import "layout/footer";
 
-// Pages Folder Files
