@@ -25,6 +25,9 @@ header {
         font-size: 1.1rem;
         font-weight: 600;
         color: $light;
+        @media (max-width: 576px) {
+          font-size: 1rem;
+        }
       }
     }
 
@@ -64,10 +67,6 @@ header {
       @include centerFlex;
 
       .user-point {
-        @media only screen and (max-width: 447px) {
-          display: none;
-        }
-
         @include centerFlex;
         padding: 5px 30px 5px 5px;
         background-color: $grey;
@@ -83,6 +82,11 @@ header {
           background-color: #4447e2;
           margin-right: 19px;
           color: white;
+          @media (max-width: 576px) {
+            width: 22px;
+            height: 22px;
+            font-size: 10px;
+          }
         }
 
         .point {
@@ -91,12 +95,18 @@ header {
           i {
             font-size: 1rem;
             margin-right: 10px;
+            @media (max-width: 576px) {
+              font-size: 0.875rem;
+            }
           }
 
           .p {
             font-size: 1rem;
             color: $light;
             font-weight: 400;
+            @media (max-width: 576px) {
+              font-size: 0.75rem;
+            }
           }
         }
       }
@@ -104,6 +114,9 @@ header {
       .user-dropdown {
         position: relative;
         display: inline-block;
+        @media (max-width: 576px) {
+          display: none;
+        }
 
         button {
           background-color: transparent;
