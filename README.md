@@ -1,6 +1,6 @@
 ## Web Service - Free Figma UI Kit | Template
 
-### [Demo Website](https://web-service-free-figma-ui-kit-template.vercel.app/)
+### [Demo Website](https://web-servicee.vercel.app)
 ![](./src/img/screenshot.png)
 
 ### UI design by [Alex Herzog](https://dribbble.com/shots/14048082-Web-Service-Free-Figma-UI-Kit)
